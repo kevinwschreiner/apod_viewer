@@ -4,12 +4,12 @@ import PictureDate from "./PictureDate";
 
 const Picture = (props) => {
   return (
-    <div>
+    <React.Fragment>
+      <img src={props.url} alt={props.title} />
       <h1> {props.title} </h1>
       <PictureDate date={props.date} />
-      <div> explanation={props.explanation} </div>
-      <div> url={props.url} </div>
-    </div>
+      <div> {props.explanation} </div>
+    </React.Fragment>
   );
 };
 

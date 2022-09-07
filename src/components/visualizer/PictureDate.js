@@ -7,9 +7,7 @@ function PictureDate(props) {
 
   return (
     <div>
-      <div>{month}</div>
-      <div>{year}</div>
-      <div>{day}</div>
+      <div>{month} {day}, {year}</div>
     </div>
   );
 }
